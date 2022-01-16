@@ -41,7 +41,7 @@ disableHugoGeneratorInject = false
   enableThemeToggle = true
 
 [taxonomies]
-    category = "Foro"
+    category = "ForoUOC"
     tag      = "LandingPage"
 
 [params.favicon.color]
