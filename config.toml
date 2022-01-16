@@ -1,0 +1,88 @@
+baseurl      = "/"
+title        = "ForoUOC"
+languageCode = "es-es"
+defaultContentLanguage = "es"
+theme        = "hermit"
+paginate     = 10
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Únete a más de 5000 estudiantes de la UOC"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = true
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "LandingPage for ForoUOC"
+  keywords = "homepage, blog"
+  images = [""]
+
+  # Set a background for the homepage
+  # backgroundImage = "assets/images/logoUOCbn.png"
+  enableThemeToggle = true
+
+[taxonomies]
+    category = "Foro"
+    tag      = "LandingPage"
+
+[params.favicon.color]
+  mask = "#1b1c1d"
+  msapplication = "#1b1c1d"
+  theme = "#1b1c1d"
+
+[languages]
+  [languages.es]
+    title = "ForoUOC se mudó a Discord"
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    buttons = "Buttons"
+    description = "LandingPage for ForoUOC"
+    homeSubtitle = "Únete a más de 5000 estudiantes de la UOC"
+    [languages.es.params.logo]
+      logoText = "ForoUOC"
+      logoLink = "https://discord.gg/mYQCUbrzJF"
+      logoLinkTitle = "ForoUOC"
+      path = "img/logoUOCbn.svg"
+      alt = "ForoUOC"
+
+[security]
+  enableInlineShortcodes = false
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+    osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
+  [security.funcs]
+    getenv = ['^HUGO_']
+  [security.http]
+    methods = ['(?i)GET']
+    urls = ['.*']
+
+[sitemap]
+  changefreq = 'monthly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[menu]
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "ForoUOC"
+    name       = "Invitación --> https://discord.gg/mYQCUbrzJF <-- Invitación"
+    url        = "https://discord.gg/mYQCUbrzJF"
