@@ -2,8 +2,6 @@
 <html lang="{{.Site.LanguageCode}}">
 
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5021884430460425"
-        crossorigin="anonymous"></script>
     {{ template "_internal/google_analytics.html" . }}
     {{ template "_internal/google_analytics_async.html" . }}
     <meta charset="UTF-8">
@@ -31,6 +29,8 @@
     {{- if templates.Exists "partials/extra-head.html" -}}
     {{ partial "extra-head.html" . }}
     {{- end }}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5021884430460425"
+        crossorigin="anonymous"></script>
 </head>
 
 <body id="page">
