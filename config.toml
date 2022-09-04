@@ -5,7 +5,7 @@ defaultContentLanguage = "es"
 theme        = "hermit"
 paginate     = 10
 canonifyURLs = true
-
+googleAnalytics = "G-1Z33FEG5KB"
 enableRobotsTXT = true
 enableGitInfo   = false
 enableEmoji     = true
