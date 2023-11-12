@@ -1,0 +1,9 @@
+User-agent: *
+Disallow:
+
+# Directories or files to disallow
+# Disallow: /private/
+# Disallow: /secret-page.html
+
+# Sitemap location
+Sitemap: https://forouoc.com/sitemap.xml
