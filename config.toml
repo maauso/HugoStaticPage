@@ -1,48 +1,41 @@
-baseurl      = "/"
-title        = "ForoUOC"
+baseurl = "/"
+title = "ForoUOC"
 languageCode = "es-es"
 defaultContentLanguage = "es"
-theme        = "hermit"
-paginate     = 10
+theme = "hermit-v2"
+paginate = 10
 canonifyURLs = true
 googleAnalytics = "G-1Z33FEG5KB"
 enableRobotsTXT = true
-enableGitInfo   = false
-enableEmoji     = true
+enableGitInfo = false
+enableEmoji = true
 enableMissingTranslationPlaceholders = false
-disableRSS     = false
+disableRSS = false
 disableSitemap = false
-disable404     = false
+disable404 = false
 disableHugoGeneratorInject = false
 
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
+  dateform = "Jan 2, 2006"
+  dateformShort = "Jan 2"
+  dateformNum = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
-
-  # Subtitle for home
   homeSubtitle = "Únete a más de 5000 estudiantes de la UOC"
-
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = true
-
-  # Enable sharing buttons, if you like
   enableSharingButtons = true
-
-  # Metadata mostly used in document's head
   description = "LandingPage for ForoUOC"
   keywords = "homepage, blog"
   images = [""]
-
-  # Set a background for the homepage
-  # backgroundImage = "assets/images/logoUOCbn.png"
   enableThemeToggle = true
 
+[params.author]
+  name = "ForoUOC"
+  about = "administrator@forouoc.com"
+
 [taxonomies]
-    category = "ForoUOC"
-    tag      = "LandingPage"
+  category = "ForoUOC"
+  tag = "LandingPage"
 
 [params.favicon.color]
   mask = "#1b1c1d"
@@ -51,7 +44,7 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.es]
-    title = "ForoUOC se mudó a Discord"
+    title = "ForoUOC está en Discord"
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     buttons = "Buttons"
     description = "LandingPage for ForoUOC"
@@ -80,9 +73,14 @@ disableHugoGeneratorInject = false
   priority = 0.5
 
 [menu]
-
-  # And you can even create generic menu
   [[menu.main]]
     identifier = "ForoUOC"
-    name       = "Invitación --> https://discord.gg/kaBRMRKjYz <-- Invitación"
-    url        = "https://discord.gg/kaBRMRKjYz"
+    name = "Invitación --> https://discord.gg/kaBRMRKjYz <-- Invitación"
+    url = "https://discord.gg/kaBRMRKjYz"
+
+[[params.socialLinks]]
+  name = "Discord"
+  url = "https://discord.gg/kaBRMRKjYz"
+  weight = 1
+  icon = "discord"
+  title = "Discord"

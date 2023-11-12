@@ -1,34 +1,34 @@
 {{- range .Site.Menus.main }}
-{{- if .HasChildren }}
-<a href="{{ .URL | absLangURL }}" class="has-children">{{ .Name }}</a>
-<span class="sub-menu">
-	{{- range .Children }}
-	<a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-	{{- end }}
-</span>
-{{- else }}
-<a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-<p style="text-align: center;">
-	<a href="https://discord.gg/kaBRMRKjYz" target="_blank">
-		<img src="https://img.icons8.com/fluency/240/000000/discord.png" />
-	</a>
-</p>
-<ul>
-	<li>100% libre y para la comunidad de estudiantes de la UOC</li>
-	<li>Grupos por asignatura y grado</li>
-	<li>Olvidate de buscar los grupos Whatsapp y Telegram de la UOC</li>
-	<li>Acceso a Pacs de otros a&ntilde;os&nbsp;</li>
-	<li>Únete a la comunidad discord</li>
-	<p><em><strong><a href="https://discord.gg/kaBRMRKjYz">Invitac&iacute;on a Discord</a></strong></em></p>
-	<div id="gtx-trans" style="position: absolute; left: 256px; top: 32px;">
-		<div class="gtx-trans-icon">&nbsp;</div>
-	</div>
-</ul>
-<p style="text-align: center;">
-	<iframe src="https://discord.com/widget?id=853303915121999893&theme=dark" width="350" height="500"
-		allowtransparency="true" frameborder="0"
-		sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
-	</iframe>
-</p>
-{{- end }}
+  {{- if .HasChildren }}
+    <a href="{{ .URL | absLangURL }}" class="has-children">{{ .Name }}</a>
+    <span class="sub-menu">
+      {{- range .Children }}
+        <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+      {{- end }}
+    </span>
+  {{- else }}
+    <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+    <p style="text-align: center;">
+      <a href="https://discord.gg/kaBRMRKjYz" target="_blank">
+        <img src="https://img.icons8.com/fluency/240/000000/discord.png" alt="Discord" />
+      </a>
+    </p>
+    <ul>
+      <li>Completamente libre y dedicado a la comunidad de estudiantes de la UOC</li>
+      <li>Organizados por asignatura y grado</li>
+      <li>Di adiós a la búsqueda de grupos en Whatsapp y Telegram de la UOC</li>
+      <li>Acceso a PACs de años anteriores</li>
+      <li>Únete a nuestra vibrante comunidad en Discord</li>
+      <p><em><strong><a href="https://discord.gg/kaBRMRKjYz">Invitación a Discord</a></strong></em></p>
+      <div id="gtx-trans" style="position: absolute; left: 256px; top: 32px;">
+        <div class="gtx-trans-icon">&nbsp;</div>
+      </div>
+    </ul>
+    <p style="text-align: center;">
+      <iframe src="https://discord.com/widget?id=853303915121999893&theme=dark" width="350" height="500"
+        allowtransparency="true" frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+      </iframe>
+    </p>
+  {{- end }}
 {{- end }}
